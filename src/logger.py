@@ -28,3 +28,6 @@ if not logger.hasHandlers():
     logger.addHandler(file_handler)
     logger.addHandler(console_handler)
 
+if __name__ == "__main__":
+    logger.info("Logging has started")
+    print(f"Logging started. Check logs in: {LOG_FILE_PATH}")
